@@ -1,0 +1,19 @@
+.pit{
+	width: 100%;
+}
+.gutter{
+	height: 1.5em;
+	color: #FAFAFA;
+	background-color: #404040;
+}
+
+#console-result{
+	background-color: #FFFFE6;
+	color: #993300;
+}
+
+#console-container{
+	height: 2em;
+	background-color: #ECE7F6;
+	color: #00003D;
+}
