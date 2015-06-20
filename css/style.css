@@ -1,5 +1,10 @@
-.pit{
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.pit #console-container{
 	width: 100%;
+
 }
 .gutter{
 	height: 1.5em;
@@ -8,12 +13,13 @@
 }
 
 #console-result{
-	background-color: #FFFFE6;
 	color: #993300;
+	padding: 5px;
 }
 
-#console-container{
-	height: 2em;
-	background-color: #ECE7F6;
+#console-input{
+	background-color: #FFFFFF;
+	height: 1.5em;
 	color: #00003D;
+	margin: 5px;
 }
