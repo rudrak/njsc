@@ -22,7 +22,7 @@
 				try {
 					returnExp = eval.call(this, evaluationString);	
 				} catch (err){
-					returnExp = err;
+					returnExp = '<span class="error">' +err + '</span>';
 				}
 				return returnExp;
 			},
@@ -53,19 +53,19 @@
 							$(this).text('');
 							break;
 						case 38 : // up arrow
-							if(!that.commandHistory.commad.length && that.commandHistory.position){
-								evaluateExpression(that.commandHistory.command[that.commandHistory.position]);
-								that.commandHistory.position-- ;
+							if (that.commandHistory.command.length) {
+								//evaluateExpression(that.commandHistory.command[that.commandHistory.position]);
+								$(this).text('').text(that.commandHistory.command[that.commandHistory.position]);
+								if (!that.commandHistory.position) {
+									that.commandHistory.position--;
+								}
 							}
 							break;
-						case 40 : // down arrow
+						case 40: // down arrow
  							if(this.commandHistory.position !== this.commandHistory.command.length){
 
  							}
  							break;
-					}
-					// if the key pressed is enter key then trigger evaluate string
-					if(evt.keyCode === 13){
 					}
 				});
 			};
