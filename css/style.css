@@ -2,16 +2,7 @@ body{
 	background-color: #404040;
 	margin: 0px;
 	padding: 0px;
-}
-.pit #console-container{
-	width: 100%;
-
-}
-.gutter{
-	height: 1.5em;
-	color: #FAFAFA;
-	background-color: #404040;
-	margin: 2px;
+	font-family: Impact, Charcoal, sans-serif;
 }
 
 #console-result{
@@ -24,9 +15,22 @@ body{
 	height: 1.5em;
 	color: #00003D;
 	margin: 5px;
-	padding: 0px 1px ;
+	line-height: 1.5em;
 }
 
+.pit, #console-container{
+	width: 100%;
+	font-family: "Courier New", Courier, monospace;
+	padding: 0px 2px;
+}
+.gutter{
+	height: 1.5em;
+	color: #FAFAFA;
+	background-color: #017A62;
+	margin: 5px;
+	letter-spacing: 1px;
+	padding: 5px;
+}
 .error {
 	color: #FF7F3F;
 }
